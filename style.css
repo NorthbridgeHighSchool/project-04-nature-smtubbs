@@ -6,16 +6,23 @@ html.rainforest{
   background-size: cover;
 }
 h1{
-  color: rgb(255, 255, 255);
+  color: rgb(30, 66, 31);
+  background-color: #ffffffc5;
+  padding: 2px;
+  margin-right: 30%;
 }
 h2{
-  color: rgb(255, 255, 255);
+  color: rgb(30,66,31);
+  background-color: #ffffffc5;
+  padding: 2px;
+  margin-right: 30%;
 }
 .textblock{
   background-color: #ffffffc5;
   color: #223625;
-  padding: 5px;
+  padding: 10px;
   margin-right: 30%;
+  text-align: justify;
 }
 nav ul{
   list-style-type: none;
@@ -30,16 +37,17 @@ nav a:link{
   padding: 15px;
 }
 nav a:visited{
-
+  color: #365f31;
 }
 nav a:hover{
-
+  color: #387931;
+  background-color: #adcaaa;
 }
 nav a.current{
   color: #8a8a8a;
 }
 nav a:active{
-
+  color: #446a8f;
 }
 nav li{
   margin-left: 20px;
@@ -61,19 +69,60 @@ nav ul{
 }
 .sublist a:link{
   display: block;
+ 
 }
 .sublist a:visited{
-
+  color: #365f31;
 }
 .sublist a:hover{
-
+  color: #387931;
+  background-color: #adcaaa;
 }
 .sublist a.current{
   color: #8a8a8a;
 }
 .sublist a:active{
-  
+  color: #446a8f;
 }
 .sublist li{
-  margin-left: -1;
+  margin-left: 0;
+}
+img{
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 200pt;
+}
+.container{
+  position: relative;
+  width: 200pt;
+}
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #27683daf;
+  border-radius: 50%;
+}
+.container:hover .overlay{
+  opacity: 1;
+}
+.text{
+  color:#ffffff;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
