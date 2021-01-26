@@ -99,7 +99,7 @@ img{
 .image{
   display: block;
   width: 100%;
-  height: auto;
+  height: auto; 
 }
 .overlay{
   position: absolute;
